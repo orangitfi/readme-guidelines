@@ -7,7 +7,9 @@ What is the reason why this application exists? What real-world business cases d
 ## 2. Architecture
 
 High-level architecture: what is deployed and where, what are the main integration points, what are the
-main languages/technologies used etc.?
+main languages/technologies used, what kind of data is stored and where etc.?
+
+Don't hesitate to use a picture.
 
 ## 3. Development environment
 
