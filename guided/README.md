@@ -15,7 +15,9 @@ Don't hesitate to use a picture.
 
 ### 3.1. Prerequisites, and what to do first
 
-What other software you need to have installed on your local machine in order to set up a development environment?
+What other software you need to have installed on your local machine in order to set up a development environment? 
+Is there are separate file for environmental variables? How does a developer get one that works? 
+Are other changes - such as /etc/hosts, port-forwardings - needed?
 
 ### 3.2. Run tests
 
