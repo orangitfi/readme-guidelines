@@ -3,7 +3,7 @@
 
 ## Architecture
 
-## Development environment
+## Development
 
 ### Run tests
 

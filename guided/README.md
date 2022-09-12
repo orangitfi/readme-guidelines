@@ -27,7 +27,7 @@ High-level architecture:
 - What kind of data is stored and where?
     - Don't hesitate to use a picture.
 
-## Development environment
+## Development
 
 ### Run tests
 
