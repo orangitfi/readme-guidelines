@@ -1,53 +1,57 @@
 # OrangIT Standard Documentation
 
-## Project purpose
+Project purpose: What is the reason why this application exists? What real-world business cases does it support?
 
-What is the reason why this application exists? What real-world business cases does it support?
+## Getting started
+
+Prequisites: 
+- What other software you need to have installed on your local machine in order to set up a development environment?
+- Is there are separate file for environmental variables? 
+- How does a developer get one that works?
+- Are other changes - such as /etc/hosts, port-forwardings - needed?
+
+Setup:
+- Install dependencies and other initial setup steps e.g. `docker-compose up` and `npm install`.
+- How to start the application locally e.g. `npm start`.
+
+Access the application locally:
+- What URL(s) to use to access the locally running application?
+- What kind of credentials do you need to access all relevant pieces of the application?
+- If there are multiple distinct user roles, you need a test user account for each of them.
 
 ## Architecture
 
-High-level architecture: what is deployed and where, what are the main integration points, what are the
-main languages/technologies used, what kind of data is stored and where etc.?
-
-Don't hesitate to use a picture.
+High-level architecture: 
+- what is deployed and where, what are the main integration points? 
+- What are the main languages/technologies used? 
+- What kind of data is stored and where?
+    - Don't hesitate to use a picture.
 
 ## Development environment
 
-### Prerequisites, and what to do first
-
-What other software you need to have installed on your local machine in order to set up a development environment?
-Is there are separate file for environmental variables? How does a developer get one that works?
-Are other changes - such as /etc/hosts, port-forwardings - needed?
-
 ### Run tests
 
-How to run all tests locally. If there are separate unit, integration and acceptance/e2e tests, remember to
-describe here how to run any/all of them.
+- How to run tests locally? 
+- Are there unit tests?
+- Are there integration tests?
+- Are there e2e tests?
+
+Describe here how to run any/all of them.
 
 ### Migrations
 
-How to run database migrations locally (if necessary). Sometimes the migrations are run as part of the test suite,
-which is preferable.
+How to run database migrations locally (if necessary). Sometimes the migrations are run as part of the test suite, which is preferable.
 
+### How to make a production data dump and import it into the local development environment?
 
-### Start the application locally
+Sometimes you run into hard-to-reproduce bugs, which manifest themselves only with production data.
 
-How to start the application locally.
+In those cases it is extremely useful to be able to do a data dump from production and set up the local
+development environment with production data.
 
-### Access the application locally
+Describe how to do that here.
 
-What URL(s) to use to access the locally running application?
-
-What kind of credentials do you need to access all relevant pieces of the application?
-
-If there are multiple distinct user roles, you need a test user account for each of them.
-
-### IDE setup
-
-If there are some special tricks needed to get the project working in IDEA/Eclipse/something other, then
-describe them here. Preferably attach screenshots, if applicable.
-
-### Version control
+### Repository guidelines
 
 If using git:
 - What kind of git workflow is used in this project. Merge or rebase?
@@ -59,14 +63,8 @@ If using git:
 If using some other version control than git:
 - The same as above, as is relevant to the version control system in use.
 
-### How to make a production data dump and import it into the local development environment
-
-Sometimes you run into hard-to-reproduce bugs, which manifest themselves only with production data.
-
-In those cases it is extremely useful to be able to do a data dump from production and set up the local
-development environment with production data.
-
-Describe how to do that here.
+Code style:
+- Coding conventions, linting, etc.
 
 ## Test environment
 
@@ -82,23 +80,11 @@ describe the steps needed here.
 
 ### Deployment
 
-How a deployment is done.
-
-### Verifying that a deployment was successful
-
-The steps needed to verify that a new version is running in the test environment successfully.
-
-#### Automated test cases
-
-Tests (scripts or otherwise) that you have to run in order to ensure that a deployment was successful.
-
-#### Manual test cases
-
-Things that you have to test manually in order to ensure that a deployment was successful.
-
-### Rollback
-
-How to restore the previous version of the software when a deployment goes wrong?
+- How a deployment is done.
+- The steps needed to verify that a new version is running in the test environment successfully.
+- Tests (scripts or otherwise) that you have to run in order to ensure that a deployment was successful.
+- Things that you have to test manually in order to ensure that a deployment was successful.
+- How to restore the previous version of the software when a deployment goes wrong?
 
 ### Logs
 
@@ -152,10 +138,6 @@ What things are monitored? Which tools are used? How to access the UI(s) of the 
 
 Where is/are the CI(s) for this project?
 
-## Code style
-
-Coding conventions, linting, etc.
-
 ## Operating instructions for manual and semi-manual processes
 
 Many applications require some manual processes which occur from time to time, like for example
@@ -166,8 +148,10 @@ with these instructions.
 
 ## More useful information, Tips and Tricks
 
-Other important or useful things to know.
+- Other important or useful things to know.
+- Security considerations: Are there any specific things to consider regarding the security of the project, in addition to the usual best practices?
 
-## Security considerations
+IDE setup:
+- If there are some special tricks needed to get the project working in IDEA/Eclipse/something other, then
+describe them here. Preferably attach screenshots, if applicable.
 
-Are there any specific things to consider regarding the security of the project, in addition to the usual best practices?

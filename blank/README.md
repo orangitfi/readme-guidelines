@@ -1,40 +1,23 @@
 # OrangIT Standard Documentation
-
-## Project purpose
+## Getting started
 
 ## Architecture
 
 ## Development environment
 
-### Prerequisites, and what to do first
-
 ### Run tests
 
 ### Migrations
 
-### Start the application locally
+### How to make a production data dump and import it into the local development environment?
 
-### Access the application locally
-
-### IDE setup
-
-### Version control
-
-### How to make a production data dump and import it into the local development environment
+### Repository guidelines
 
 ## Test environment
 
 ### Access
 
 ### Deployment
-
-### Verifying that a deployment was successful
-
-#### Automated test cases
-
-#### Manual test cases
-
-### Rollback
 
 ### Logs
 
@@ -60,10 +43,6 @@
 
 ## Continuous integration
 
-## Code style
-
 ## Operating instructions for manual and semi-manual processes
 
 ## More useful information, Tips and Tricks
-
-## Security considerations
