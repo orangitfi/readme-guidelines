@@ -1,53 +1,57 @@
-# OrangIT Standard Documentation V1.0.0
+# OrangIT Standard Documentation
 
-## 1. Project purpose
+Project purpose: What is the reason why this application exists? What real-world business cases does it support?
 
-What is the reason why this application exists? What real-world business cases does it support?
+## Getting started
 
-## 2. Architecture
+Prequisites: 
+- What other software you need to have installed on your local machine in order to set up a development environment?
+- Is there are separate file for environmental variables? 
+- How does a developer get one that works?
+- Are other changes - such as /etc/hosts, port-forwardings - needed?
 
-High-level architecture: what is deployed and where, what are the main integration points, what are the
-main languages/technologies used, what kind of data is stored and where etc.?
+Setup:
+- Install dependencies and other initial setup steps e.g. `docker-compose up` and `npm install`.
+- How to start the application locally e.g. `npm start`.
 
-Don't hesitate to use a picture.
+Access the application locally:
+- What URL(s) to use to access the locally running application?
+- What kind of credentials do you need to access all relevant pieces of the application?
+- If there are multiple distinct user roles, you need a test user account for each of them.
 
-## 3. Development environment
+## Architecture
 
-### 3.1. Prerequisites, and what to do first
+High-level architecture: 
+- what is deployed and where, what are the main integration points? 
+- What are the main languages/technologies used? 
+- What kind of data is stored and where?
+    - Don't hesitate to use a picture.
 
-What other software you need to have installed on your local machine in order to set up a development environment?
-Is there are separate file for environmental variables? How does a developer get one that works?
-Are other changes - such as /etc/hosts, port-forwardings - needed?
+## Development
 
-### 3.2. Run tests
+### Run tests
 
-How to run all tests locally. If there are separate unit, integration and acceptance/e2e tests, remember to
-describe here how to run any/all of them.
+- How to run tests locally? 
+- Are there unit tests?
+- Are there integration tests?
+- Are there e2e tests?
 
-### 3.3. Migrations
+Describe here how to run any/all of them.
 
-How to run database migrations locally (if necessary). Sometimes the migrations are run as part of the test suite,
-which is preferable.
+### Migrations
 
+How to run database migrations locally (if necessary). Sometimes the migrations are run as part of the test suite, which is preferable.
 
-### 3.4. Start the application locally
+### How to make a production data dump and import it into the local development environment?
 
-How to start the application locally.
+Sometimes you run into hard-to-reproduce bugs, which manifest themselves only with production data.
 
-### 3.5. Access the application locally
+In those cases it is extremely useful to be able to do a data dump from production and set up the local
+development environment with production data.
 
-What URL(s) to use to access the locally running application?
+Describe how to do that here.
 
-What kind of credentials do you need to access all relevant pieces of the application?
-
-If there are multiple distinct user roles, you need a test user account for each of them.
-
-### 3.6. IDE setup
-
-If there are some special tricks needed to get the project working in IDEA/Eclipse/something other, then
-describe them here. Preferably attach screenshots, if applicable.
-
-### 3.7. Version control
+### Repository guidelines
 
 If using git:
 - What kind of git workflow is used in this project. Merge or rebase?
@@ -59,18 +63,12 @@ If using git:
 If using some other version control than git:
 - The same as above, as is relevant to the version control system in use.
 
-### 3.8. How to make a production data dump and import it into the local development environment
+Code style:
+- Coding conventions, linting, etc.
 
-Sometimes you run into hard-to-reproduce bugs, which manifest themselves only with production data.
+## Test environment
 
-In those cases it is extremely useful to be able to do a data dump from production and set up the local
-development environment with production data.
-
-Describe how to do that here.
-
-## 4. Test environment
-
-### 4.1. Access
+### Access
 
 - The URL where the test environment of the application can be found.
 Also, all other URLs which point to something relevant, like for example an administrator UI, etc.
@@ -80,37 +78,25 @@ in order to be able to test all of them.
 - If a VPN, SSH tunneling or some other similar way to access the test environment is required,
 describe the steps needed here.
 
-### 4.2. Deployment
+### Deployment
 
-How a deployment is done.
+- How a deployment is done.
+- The steps needed to verify that a new version is running in the test environment successfully.
+- Tests (scripts or otherwise) that you have to run in order to ensure that a deployment was successful.
+- Things that you have to test manually in order to ensure that a deployment was successful.
+- How to restore the previous version of the software when a deployment goes wrong?
 
-### 4.3. Verifying that a deployment was successful
-
-The steps needed to verify that a new version is running in the test environment successfully.
-
-#### 4.3.1. Automated test cases
-
-Tests (scripts or otherwise) that you have to run in order to ensure that a deployment was successful.
-
-#### 4.3.2. Manual test cases
-
-Things that you have to test manually in order to ensure that a deployment was successful.
-
-### 4.4. Rollback
-
-How to restore the previous version of the software when a deployment goes wrong?
-
-### 4.5. Logs
+### Logs
 
 Where are the logs, how to change logging levels, etc.
 
-### 4.6. Monitoring
+### Monitoring
 
 What kind of monitoring is there in the test environment, if any.
 
-## 5. Production environment
+## Production environment
 
-### 5.1. Access
+### Access
 
 - The URL where the production environment of the application can be found.
 Also, all other URLs which point to something relevant, like for example an administrator UI, etc.
@@ -120,43 +106,39 @@ in order to be able to test all of them.
 - If a VPN, SSH tunneling or some other similar way to access the production environment is required,
 describe the steps needed here.
 
-### 5.2. Deployment
+### Deployment
 
 How a production deployment is done.
 
-### 5.3. Verifying that a deployment was successful
+### Verifying that a deployment was successful
 
 The steps needed to verify that a new version is running in production successfully.
 
-#### 5.3.1. Automated test cases
+#### Automated test cases
 
 Tests (scripts or otherwise) that you have to run in order to ensure that a deployment was successful.
 
-#### 5.3.2. Manual test cases
+#### Manual test cases
 
 Things that you have to test manually in order to ensure that a deployment was successful.
 
-### 5.4. Rollback
+### Rollback
 
 How to restore the previous version of the software when a deployment goes wrong?
 
-### 5.5. Logs
+### Logs
 
 Where are the logs, how to change logging levels, etc.
 
-### 5.6. Monitoring
+### Monitoring
 
 What things are monitored? Which tools are used? How to access the UI(s) of the monitoring tools?
 
-## 6. Continuous integration
+## Continuous integration
 
 Where is/are the CI(s) for this project?
 
-## 7. Code style
-
-Coding conventions, linting, etc.
-
-## 8. Operating instructions for manual and semi-manual processes
+## Operating instructions for manual and semi-manual processes
 
 Many applications require some manual processes which occur from time to time, like for example
 adding new users, doing manual database maintenance work, creating monthly reports etc.
@@ -164,10 +146,12 @@ adding new users, doing manual database maintenance work, creating monthly repor
 Describe how to do them here. The descriptions have to be detailed enough so that someone else can do them
 with these instructions.
 
-## 9. More useful information, Tips and Tricks
+## More useful information, Tips and Tricks
 
-Other important or useful things to know.
+- Other important or useful things to know.
+- Security considerations: Are there any specific things to consider regarding the security of the project, in addition to the usual best practices?
 
-## 10. Security considerations
+IDE setup:
+- If there are some special tricks needed to get the project working in IDEA/Eclipse/something other, then
+describe them here. Preferably attach screenshots, if applicable.
 
-Are there any specific things to consider regarding the security of the project, in addition to the usual best practices?
