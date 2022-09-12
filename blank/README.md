@@ -1,69 +1,69 @@
-# OrangIT Standard Documentation V1.0.0
+# OrangIT Standard Documentation
 
-## 1. Project purpose
+## Project purpose
 
-## 2. Architecture
+## Architecture
 
-## 3. Development environment
+## Development environment
 
-### 3.1. Prerequisites, and what to do first
+### Prerequisites, and what to do first
 
-### 3.2. Run tests
+### Run tests
 
-### 3.3. Migrations
+### Migrations
 
-### 3.4. Start the application locally
+### Start the application locally
 
-### 3.5. Access the application locally
+### Access the application locally
 
-### 3.6. IDE setup
+### IDE setup
 
-### 3.7. Version control
+### Version control
 
-### 3...
+### How to make a production data dump and import it into the local development environment
 
-## 4. Test environment
+## Test environment
 
-### 4.1. Access
+### Access
 
-### 4.2. Deployment
+### Deployment
 
-### 4.3. Verifying that a deployment was successful
+### Verifying that a deployment was successful
 
-#### 4.3.1. Automated test cases
+#### Automated test cases
 
-#### 4.3.2. Manual test cases
+#### Manual test cases
 
-### 4.4. Rollback
+### Rollback
 
-### 4.5. Logs
+### Logs
 
-### 4.6. Monitoring
+### Monitoring
 
-## 5. Production environment
+## Production environment
 
-### 5.1. Access
+### Access
 
-### 5.2. Deployment
+### Deployment
 
-### 5.3. Verifying that a deployment was successful
+### Verifying that a deployment was successful
 
-#### 5.3.1. Automated test cases
+#### Automated test cases
 
-#### 5.3.2. Manual test cases
+#### Manual test cases
 
-### 5.4. Rollback
+### Rollback
 
-### 5.5. Logs
+### Logs
 
-### 5.6. Monitoring
+### Monitoring
 
-## 6. Continuous integration
+## Continuous integration
 
-## 7. Code style
+## Code style
 
-## 8. Operating instructions for manual and semi-manual processes
+## Operating instructions for manual and semi-manual processes
 
-## 9. More useful information, Tips and Tricks
+## More useful information, Tips and Tricks
 
-## 10. Security considerations
+## Security considerations
